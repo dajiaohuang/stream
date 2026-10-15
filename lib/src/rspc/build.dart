@@ -82,7 +82,7 @@ Future<bool> compileFile(String sourceName, {String? destinationName,
     print("${e.message}\nCompilation aborted.");
     return false;
   } finally {
-    out.close();
+    await out.close();
   }
 }
 
